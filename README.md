@@ -27,15 +27,15 @@ Netlify link:- https://modesensteamclone.netlify.app
 
 ## Pages and Features:
 
-#### HomePage
+### HomePage
 <p>This is the main landing page of our website. Here clicking on any option on the Navbar will redirect the user to the respective Page.</p>
 <img src="https://miro.medium.com/max/1400/1*kegvN6wJ-eovgMgbo4MRAg.jpeg"/>
 
-#### Sign up / Sign in Page
+### Sign up / Sign in Page
 <p>On this page, user can register using google auth. If the user is already registered, then he/she can simply sign in by providing valid details of the them.</p>
 <img src="https://miro.medium.com/max/1400/1*wOhPAJ6eit2Sz9Ckccj9EQ.png"/>
 
-#### Products page
+### Products page
 <p>This section displays the Categories of the verious products and their details respectively. This is the product page under the category mens likewise we have many categories for customers to browse.</p>
 <img src="https://miro.medium.com/max/1400/1*rIyxQ8If6a5eAY0Rbmvevw.jpeg"/>
 
@@ -44,11 +44,11 @@ Netlify link:- https://modesensteamclone.netlify.app
 
 <p>when the user clicks on the see more details button, the user will get redirected to the product page.</p>
 
-#### Product page
+### Product page
 <p>On clicking “Select Store” the user will get redirected to the Store list and when the user clicks on Buy from the store, the user will get redirected to the respective store's website.</p>
 <img src="https://miro.medium.com/max/1400/1*-BET0EZA2kZUp_F7_4TvKQ.jpeg" />
 
-#### Recently Viewed page
+### Recently Viewed page
 <p>On this page you can view the products that you recently visited.</p>
 <img src="https://miro.medium.com/max/1400/1*bJ46ba2naCEn6jVZBDU-lQ.jpeg"/>
 
