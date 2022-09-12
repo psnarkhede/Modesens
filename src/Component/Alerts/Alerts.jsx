@@ -59,8 +59,8 @@ const Alerts = () => {
 
 useEffect(() => {
   axios
-  .get("http://localhost:8080/alert")
-  .then((res) => setRecentdata(res.data))
+    .get("https://modesensbackend.herokuapp.com/alert")
+    .then((res) => setRecentdata(res.data));
 },[data])
 
  

@@ -246,7 +246,7 @@ const Products = () => {
   useEffect(() => {
     axios
       .get(
-        `http://localhost:8080/${headlinearr[id].json}?_page=${page}&_limit=20`
+        `https://modesensbackend.herokuapp.com/${headlinearr[id].json}?_page=${page}&_limit=20`
       )
       .then((res) => {
         settotalpro(res.headers["x-total-count"]);
@@ -582,7 +582,12 @@ const Products = () => {
                 <div className={styled.product1img} key={item.web_scraper_order}>
                   
                     <span onClick={()=>{
-                      axios.post("http://localhost:8080/like",item).then((res)=>console.log(res))
+                      axios
+                        .post(
+                          "https://modesensbackend.herokuapp.com/like",
+                          item
+                        )
+                        .then((res) => console.log(res));
                     }}>♡</span>
                     <Link to={`/product/${cate}/${item.web_scraper_order}`}>
 

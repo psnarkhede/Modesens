@@ -16,7 +16,7 @@ const Quickview = () => {
     useEffect(()=>{
       axios
       .get(
-        `http://localhost:8080/${category}`
+        `https://modesensbackend.herokuapp.com/${category}`
       )
       .then((res) => {
         res.data.map((el) => {

@@ -15,10 +15,8 @@ const RecentQuickview = () => {
 
     useEffect(()=>{
       axios
-      .get(
-        `http://localhost:8080/recent/${id}`
-      )
-      .then((res) => setProduct(res.data)  )
+        .get(`https://modesensbackend.herokuapp.com/recent/${id}`)
+        .then((res) => setProduct(res.data));
     },[]) 
 
   return (

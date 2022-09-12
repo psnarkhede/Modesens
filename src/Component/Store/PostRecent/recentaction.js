@@ -7,12 +7,12 @@ export const postrecentapi = (dispatch,category, productid) => {
     dispatch({type:POSTRECENTLOADING})
 
     axios
-    .get(`http://localhost:8080/${category}`)
+    .get(`https://modesensbackend.herokuapp.com/${category}`)
     .then((res) => {
         res.data.map((el) => {
             if(el.web_scraper_order === productid){
                 axios
-                .post("http://localhost:8080/recent",{
+                .post("https://modesensbackend.herokuapp.com/recent",{
                     category:category,
                     web_scraper_order: el.web_scraper_order,
                     category_MenClothing:el.category_MenClothing,
@@ -24,7 +24,7 @@ export const postrecentapi = (dispatch,category, productid) => {
                     product_img_src:el.product_img_src
                 }).then((res) => 
                 axios
-                .get(`http://localhost:8080/recent`)
+                .get(`https://modesensbackend.herokuapp.com/recent`)
                 .then((res) => dispatch({type:POSTRECENTSUCCESS, payload:res.data}))
                 )
             }
@@ -38,10 +38,10 @@ export const postrecentapi = (dispatch,category, productid) => {
 export const removerecentapi = (dispatch,id) => {
     console.log(id)
     axios
-    .delete(`http://localhost:8080/recent/${id}`)
+    .delete(`https://modesensbackend.herokuapp.com/recent/${id}`)
     .then(() => 
         axios
-                .get(`http://localhost:8080/recent`)
+                .get(`https://modesensbackend.herokuapp.com/recent`)
                 .then((res) => dispatch({type:DELETERECENT, payload:res.data}))
     )
 };

@@ -27,8 +27,8 @@ function Likes() {
 
   useEffect(() => {
     axios
-    .get("http://localhost:8080/like")
-    .then((res) => setLikeddata(res.data))
+      .get("https://modesensbackend.herokuapp.com/like")
+      .then((res) => setLikeddata(res.data));
   },[data])
 
   return (

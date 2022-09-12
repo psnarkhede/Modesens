@@ -55,8 +55,8 @@ const Recent = () => {
 
 useEffect(() => {
   axios
-  .get("http://localhost:8080/recent")
-  .then((res) => setRecentdata(res.data))
+    .get("https://modesensbackend.herokuapp.com/recent")
+    .then((res) => setRecentdata(res.data));
 },[data])
 
 const handledelete = (id) => {

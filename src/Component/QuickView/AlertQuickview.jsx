@@ -15,10 +15,8 @@ const AlertQuickview = () => {
 
     useEffect(()=>{
       axios
-      .get(
-        `http://localhost:8080/alert/${id}`
-      )
-      .then((res) => setProduct(res.data)  )
+        .get(`https://modesensbackend.herokuapp.com/alert/${id}`)
+        .then((res) => setProduct(res.data));
     },[]) 
 
   return (
